@@ -1,0 +1,12 @@
+//program to find the size of int, float, double and char
+#include <stdio.h>
+int main(void) 
+{
+	int a;
+	char ch;
+	printf ("\n\t integer:%d", sizeof (int));
+	printf ("\n\t float:%d", sizeof (float));
+	printf ("\n\t double:%d", sizeof (double));
+	printf ("\n\t character:%d", sizeof (char));
+	return 0;
+}
