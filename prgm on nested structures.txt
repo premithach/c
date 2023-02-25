@@ -1,0 +1,20 @@
+//program on nested structures
+#include <stdio.h>
+int main ()
+{
+    struct
+    {
+        int sno;
+        char sname[15];
+        float avg;
+    struct
+    {
+        int day, mon, year;
+    }dob;
+}s;
+scanf ("%d %s %f",&s.sno,s.sname,&s.avg);
+scanf ("%d %d %d",&s.dob.day,&s.dob.mon,&s.dob.year);
+printf ("\n\t %d %s %f",s.sno,s.sname,s.avg);
+printf ("\n\t %d %d %d",s.dob.day,s.dob.mon,s.dob.year);
+return 0;
+}

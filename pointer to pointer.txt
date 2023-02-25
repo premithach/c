@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <string.h>
+//pointer to pointer
+int main(void) 
+{
+   int n=10,*p1,**p2;
+   p1=&n;
+   p2=&p1;
+   printf("\n\t value of n:%d",n);
+   printf("\n\t address of n:%d",&n);
+   printf("\n\t value of p1:%d",*p1); 
+   printf("\n\t value of p1:%d",p1);
+   printf("\n\t address of p1:%d",&p1); 
+   printf("\n\t value of p2:%d",**p2);
+   printf("\n\t address of p2:%d",&p2);
+   
+   return 0;
+}
+
