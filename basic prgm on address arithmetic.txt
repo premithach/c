@@ -1,0 +1,13 @@
+#include <stdio.h>
+//basic prgm on address arithmetic
+
+int main(void)
+{
+    int n=10,*p;
+    p=&n;
+    printf("\n\t address of p:%d",p);
+    p=p+2;
+    printf("\n\t address of p after increment:%d",p); 
+    return 0;
+}
+

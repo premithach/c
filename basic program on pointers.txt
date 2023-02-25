@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int main(void) 
+{
+    int n=10,*p;
+    p=&n;
+    printf("\n\t value of n:%d",n);
+    printf("\n\t address of n:%d",&n);
+    printf("\n\t value of p:%d",p);
+    printf("\n\t address of p:%d",&p); 
+    
+	return 0;
+}
+
