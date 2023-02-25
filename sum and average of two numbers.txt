@@ -1,0 +1,15 @@
+//program to find the sum and average of two numbers
+#include <stdio.h>
+void main()
+{
+    int a,b,sum;
+    float avg;
+    printf("\n\t enter the values of a and b:");
+    scanf("%d%d",&a,&b);
+    sum=a+b;
+    avg=sum/2;
+    printf("\n\t sum:%d",sum);
+    printf("\n\t average:%f",avg);
+    
+    return (0);
+}
