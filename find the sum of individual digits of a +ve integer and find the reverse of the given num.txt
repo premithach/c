@@ -1,0 +1,26 @@
+#include <stdio.h>
+//find the sum of individual digits of a positive integer and find the reverse of given number
+
+int main(void)
+{
+    int num,dup,sum,rev;
+    printf("\n\t enter a positive integer:");
+    scanf("%d",&num);
+    dup=num;
+    sum=0;
+    while(num>0)
+    {
+        sum+=num%10;
+        num/=10;
+    }
+    printf("\n\t sum of individual digits:%d",sum); 
+    rev=10;
+    while(dup>0)
+    {
+        rev=rev*10+(dup%10);
+        dup/=10;
+    }
+    printf("\n\t reverse of the given number:%d",rev);
+    return 0;
+}
+

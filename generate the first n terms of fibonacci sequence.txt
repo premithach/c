@@ -1,0 +1,22 @@
+#include <stdio.h>
+//generate the first n terms of fibonacci series
+
+int main(void)
+{
+    int i,n,f1=0,f2=1,f3;
+    printf("\n\t enter the value of n:");
+    scanf("%d",&n);
+    printf("\n\n\n fibonacci series...");
+    printf("\t%d",f1);
+    printf("\t%d",f2);
+    for(i=1;i<=n;i++)
+    {
+        f3=f1+f2;
+        f1=f2;
+        f2=f3;
+        printf("\t%d",f3);
+    }
+    
+    return 0;
+}
+
