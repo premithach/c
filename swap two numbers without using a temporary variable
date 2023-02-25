@@ -1,0 +1,38 @@
+#include <stdio.h>
+//#include <stdio.h>
+//swap two numbers without using a temporary variable
+int main(void)
+{
+    int a,b;
+    printf("\n\t enter the values of a,b:");
+    scanf("%d%d",&a,&b);
+    printf("\n\t before swapping...");
+    printf("\n\t value of a:%d",a);
+    printf("\n\t value of b:%d",b);
+    a=a+b;
+    b=a-b;
+    a=a-b;
+    printf("\n\t after swapping..");
+    printf("\n\t value of a:%d",a);
+    printf("\n\t value of b:%d",b);
+    
+    return 0;
+}
+
+int main(void)
+{
+    int a,b;
+    printf("\n\t enter the values of a,b:");
+    scanf("%d%d",&a,&b);
+    printf("\n\t before swapping...");
+    printf("\n\t value of a:%d",a);
+    printf("\n\t value of b:%d",b);
+    a=a+b;
+    b=a-b;
+    a=a-b;
+    printf("\n\t after swapping..");
+    printf("\n\t value of a:%d",a);
+    printf("\n\t value of b:%d",b);
+    
+    return 0;
+}
