@@ -1,0 +1,16 @@
+#include <stdio.h>
+/*prgm to swap two numbers without using temporary variable*/
+
+int main(void)
+{
+    int a=20,b=10,*p,*q;
+    p=&a;
+    q=&b;
+    printf("\n\t values of a and b before swapping:%d%d",a,b);
+    *p=*p+*q;
+    *q=*p-*q;
+    *p=*p-*q;
+     printf("\n\t values of a and b after swapping:%d%d",a,b); 
+    return 0;
+}
+

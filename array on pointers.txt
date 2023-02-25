@@ -1,0 +1,13 @@
+//array of pointers
+#include <stdio.h>
+int main ()
+{
+    int i;
+    char *p[3];
+    p[0]="rose";
+    p[1]="lily";
+    p[2]="jasmine";
+    for (i=0;i<3;i++)
+    printf ("\n\t flowers are:%s",p[i]);
+    return 0;
+}

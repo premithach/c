@@ -1,0 +1,36 @@
+//program to accept elements in a DDA and compute the sum and average
+#include <stdio.h>
+int main(void) 
+{
+    int a[50][5],sum=0,avg;
+	int n, i, j;
+	printf ("enter the size of array");
+	scanf ("%d", &n);
+	printf ("\n the input  of 1st  array is");
+	printf ("\n");
+	for (i=0; i<n; i++)
+	{
+	for (j=0; j<n; j++)
+	{
+	  printf ("enter the %d%d element in array=",i+1,j+1);
+	  scanf("%d", &a[i][j]);
+	}
+	}
+	for(i=0;i<n;i++)
+	{
+	    for(j=0;j<n;j++)
+	    {
+	       sum=sum +a[i][j];	
+	    }
+	}
+    avg=sum/(n*n);	
+	printf ("\nthe sum of  array is");
+	printf ("\n");
+	printf(" %d ",sum);
+	printf("\nthe average of  array is");
+    printf("\n");
+    printf(" %d ",avg);		
+	return 0;
+}
+
+
