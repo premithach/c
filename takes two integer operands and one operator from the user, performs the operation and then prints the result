@@ -1,0 +1,14 @@
+#include <stdio.h>
+//takes two integer operands and one operator from the user, performs the operation and then prints the result
+int main(void)
+{
+    int a,b,c;
+    char ch;
+    printf("\n\t enter the values of a,b:");
+    scanf("%d%d",&a,&b);
+    printf("\n\t accept an operator:");
+    scanf("%c",&ch);
+    c=a*ch*b;
+    printf("\n\t value:%d",c);
+    return 0;
+}
