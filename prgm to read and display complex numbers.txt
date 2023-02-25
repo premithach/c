@@ -1,0 +1,18 @@
+//program to read and display complex numbers
+#include <stdio.h>
+int main()
+{
+    struct
+    {
+        float real;
+        float imag;
+    } A,B;
+    //reading complex numbers
+    scanf ("%f %f",&A.real,&A.imag);
+    scanf ("%f %f",&B.real,&B.imag);
+    //writing or displaying complex numbers
+    printf ("%f+ %fi",A.real,A.imag);
+    printf ("%f+ %fi",B.real,B.imag);
+    return 0;
+}
+

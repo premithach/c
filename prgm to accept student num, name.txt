@@ -1,0 +1,30 @@
+//program accept student num,name,mark1,mark2,mark3,mark4,mark5
+//compute total and average and check for distinction, first, second, third class and fail
+#include <stdio.h>
+int main ()
+{
+   char name [50];
+   int stno, m1, m2, m3, m4, m5, avg=0, tot=0;
+   printf ("\n\t enter name");
+   gets(name);
+   printf ("\n\t enter student no.");
+   scanf ("%d", &stno);
+   printf ("\n\t enter student marks of 5 subjects");
+   scanf ("%d %d %d %d %d", &m1, &m2, &m3, &m4, &m5);
+   tot=m1+m2+m3+m4+m5;
+   avg=tot/5;
+   printf ("\n\t total and average: %d,%d", tot, avg);
+   if (avg>=80)
+   printf ("distinction");
+   else if (avg<80 && avg >=65)
+   printf ("first class");
+   else if (avg<65 && avg>=55)
+   printf ("second class");
+   else if (avg<55 && avg>=40)
+   printf ("third class");
+   else
+   printf ("fail...");
+   return 0;
+}
+
+

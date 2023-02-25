@@ -1,0 +1,25 @@
+//program on structures
+#include <stdio.h>
+int main ()
+{
+    struct stud 
+    {
+        int sno;
+        char sname[15];
+        float avg;
+    }s1[3];
+    int i;
+    for(i=0;i<3;i++)
+    {
+        scanf("%d",&s1[i].sno);
+        scanf("%s",s1[i].sname);
+        scanf("%f",&s1[i].avg);
+    }
+    for(i=0;i<3;i++)
+    {
+        printf ("\n\t sno:%d",s1[i].sno);
+        printf ("\n\t sname:%s",s1[i].sname);
+        printf ("\n\t average:%2f",s1[i].avg);
+    }    
+    return 0;
+}

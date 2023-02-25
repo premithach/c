@@ -1,0 +1,13 @@
+//program to find the area and perimeter of a circle
+#include<stdio.h>
+int main() 
+{
+	int radius,area,perimeter;
+	printf("\nEnter the radius of Circle:");
+	scanf("%d",&radius);
+	area=3.14*radius*radius;
+	perimeter=2*3.14*radius;
+	printf("\nArea of Circle:%d",area);
+	printf("\nPerimeter of Circle:%d",perimeter);
+	return (0);
+}
