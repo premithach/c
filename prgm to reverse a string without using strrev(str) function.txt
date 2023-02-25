@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <string.h>
+//program to reverse a string without using strrev(str) function
+int main(void) 
+{
+   int i,j;
+   char str[100];
+   char temp;
+   printf("enter the string:");
+   scanf("%s",str);
+   printf("\n\t string is:%s",str);
+   j=strlen(str);
+   for(i=0;i<j/2;i++);
+   {
+       temp=str[i];
+       str[i]=str[j-1-i];
+       str[j-1-i]=temp;
+   }
+   printf("\n the reverse of the string is:%s",str);
+   return 0;
+}
+

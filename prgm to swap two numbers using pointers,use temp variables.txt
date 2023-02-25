@@ -1,0 +1,18 @@
+#include <stdio.h>
+//program to swap two numbers using pointers, use temp variables
+int main(void) 
+{
+    int a=10,b=20,*p,*q,temp;
+    p=&a;//p=-1234
+    q=&b;//q=-1446
+    
+    printf("\n\t before swapping...%d%d",a,b);
+    temp=*p;//*p--*(a)---p(-1234)--10
+    *p=*q;
+    *q=temp;
+    printf("\n\t after swapping...%d%d",a,b);
+    
+    
+    return 0;
+}
+
